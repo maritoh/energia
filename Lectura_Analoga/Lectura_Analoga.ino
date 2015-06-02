@@ -13,6 +13,8 @@ void loop()
 {
   // put your main code here, to run repeatedly:
   x++;
+  
+  analog_read();
   parpadeo();
 }
 
@@ -21,4 +23,14 @@ void parpadeo(){
   delay(1000);               // wait for a second
   digitalWrite(RED_LED, LOW);    // turn the LED off by making the voltage LOW
   delay(1000);               // wait for a second 
+
+}
+
+void analog_read(){
+  // read the input on analog pin A3:
+  int sensorValue = analogRead(A3);
+  // print out the value you read:
+  Serial.println(sensorValue);
+  delay(1); // delay in between reads for stability 
+
 }
