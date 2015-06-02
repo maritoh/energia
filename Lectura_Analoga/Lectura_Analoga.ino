@@ -10,6 +10,7 @@ void loop()
 {
   // put your main code here, to run repeatedly:
   x++;
+  parpadeo();
 }
 
 void parpadeo(){
