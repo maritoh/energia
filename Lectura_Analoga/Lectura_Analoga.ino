@@ -11,6 +11,7 @@ void loop()
 {
   // put your main code here, to run repeatedly:
   x++;
+  analog_read();
 }
 
 void analog_read(){
